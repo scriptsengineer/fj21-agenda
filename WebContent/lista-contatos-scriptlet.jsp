@@ -1,3 +1,4 @@
+<%@page import="java.text.SimpleDateFormat"%>
 <%@page import="java.util.List"%>
 <%@page import="br.com.caelum.jdbc.modelo.Contato"%>
 <%@ page import="br.com.caelum.jdbc.dao.ContatoDao"%>
@@ -7,7 +8,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>Lista de contatos</title>
 </head>
 <body>
 	<table>
@@ -21,7 +22,7 @@
 			<td><%=contato.getNome()%></td>
 			<td><%=contato.getEmail()%></td>
 			<td><%=contato.getEndereco()%></td>
-			<td><%=contato.getDataNascimento().getTime()%></td>
+			<td><%=new SimpleDateFormat("dd/MM/yyyy").format(contato.getDataNascimento().getTime())%></td>
 		</tr>
 		<%
 		}
