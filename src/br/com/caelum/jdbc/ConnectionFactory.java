@@ -14,7 +14,7 @@ public class ConnectionFactory {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-			return DriverManager.getConnection("jdbc:mysql://localhost/fj21","toot","1234");
+			return DriverManager.getConnection("jdbc:mysql://localhost/fj21","root","1234");
 		}catch(SQLException ex){
 			throw new RuntimeException(ex);
 		}
