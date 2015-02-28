@@ -7,7 +7,8 @@
 <title>Cabeçalho</title>
 </head>
 <body>
-	<img src="<c:url value="/imagens/caelum.png"/>" />
+	<c:url value="/imagens/caelum.png" var="imagem"/>
+	<img src="imagem" />
 	<h2>Agenda de contatos de Rafael</h2>
 	<hr />
 </body>
