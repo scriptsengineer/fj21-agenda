@@ -7,7 +7,7 @@
 <title>Cabeçalho</title>
 </head>
 <body>
-	<img src="imagens/caelum-ensino-inovacao.png"/>
+	<img align="right" src="imagens/caelum.png"/>
 	<h2>Agenda de contatos de Rafael</h2>
 	<hr />
 </body>
