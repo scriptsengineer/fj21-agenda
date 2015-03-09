@@ -17,8 +17,20 @@ A função dele é redirecionar requisições entre recursos, como no exemplo, entre 
 
 Aqui seque o código que permite que usamos os dois juntos:
 
+
+* No java:
+
 	RequestDispatcher rd = request.getRequestDispatcher("/contato-adicionado.jsp");
 	rd.forward(request,response);
+	
+* No JSP:
+
+	<html>
+		<body>
+			Contato ${param.nome} adicionado com sucesso
+		</body>
+	</html>
+	
 
 #### Os métodos forward e include
 O método *forward* só é chamado quando nada foi escrito na página. Se precisar somente adicionar algum dado, precisa-se utilizar o método *include*
@@ -33,6 +45,9 @@ O método *forward* só é chamado quando nada foi escrito na página. Se precisar s
 ### O Principal elemento: O Controller
 
 ### teste
-	<a href="www.google.com.br">google</a>
+
+> dsiaodioasidoiasodiaosi ndasodioasidoio
+
+[ola](ola\der "foda")
 
 
