@@ -1,12 +1,16 @@
-# fj21-agenda
+#fj21-agenda
+
 Projeto de aprendizado da Apostila da Caelum FJ21 - FJ21-Agenda Web
 
-Title:  Projeto Caelum FJ21 Agenda
-Author: Rafael Correa
-Date:   08/03/2015
+##Usando o JSP (Java Server Pages)
 
-# teste
+Aqui tento dizer sobre o Java Server Pages
 
-This is a formatted ![image][] with attributes.
+##Taglibs
 
-[image]: https://www.caelum.com.br/imagens/caelum-logo.svg "Image title" width=100px height=100px
+###Usando o JSP e o Servlet juntos!
+Aqui seque o código que permite que usamos os dois juntos:
+'
+RequestDispatcher rd = request.getRequestDispatcher("/contato-adicionado.jsp");
+rd.forward(request,response);
+'
