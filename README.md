@@ -10,7 +10,7 @@ Aqui tento dizer sobre o Java Server Pages
 
 ###Usando o JSP e o Servlet juntos!
 Aqui seque o código que permite que usamos os dois juntos:
-'
-RequestDispatcher rd = request.getRequestDispatcher("/contato-adicionado.jsp");
-rd.forward(request,response);
-'
+
+	RequestDispatcher rd = request.getRequestDispatcher("/contato-adicionado.jsp");
+	rd.forward(request,response);
+
