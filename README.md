@@ -46,6 +46,29 @@ No java o comportamento switch ou parecidos (if e elses encadeados) podem sempre
 
 ### O Principal elemento: O Controller
 
+Principal elemento da MVC pois receve o parametro de qualquer lógica do sistema e cria uma classe apartir do método *newInstance*, passando também o caminho completo para o comando *forName*.
+
+	public class ControllerServlet extends HttpServlet{
+
+		@Override
+		protected void service(HttpServletRequest request, HttpServletResponse response)
+				throws ServletException, IOException {
+			String parametro = request.getParameter("logica");
+			String nomeDaClasse = "br.com.caelum.mvc.logica."+parametro;
+			try{
+				Class classe = Class.forName(nomeDaClasse);
+				Logica logica = (Logica)classe.newInstance();
+				String pagina = logica.executa(request, response);
+				request.getRequestDispatcher(pagina).forward(request,response);
+			}catch(Exception e){
+				throw new ServletException("A lógica dos negócios causou uma excessão!");
+			}
+		}
+	
+	}
+
+>	*Class.forName* usa o design pattern de **factory**!
+
 ### teste
 
 > dsiaodioasidoiasodiaosi ndasodioasidoio
