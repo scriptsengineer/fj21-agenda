@@ -31,8 +31,7 @@ Aqui seque o código que permite que usamos os dois juntos:
 		</body>
 	</html>
 	
-
-#### Os métodos forward e include
+> **Os métodos forward e include**
 O método *forward* só é chamado quando nada foi escrito na página. Se precisar somente adicionar algum dado, precisa-se utilizar o método *include*
 
 
@@ -41,6 +40,9 @@ O método *forward* só é chamado quando nada foi escrito na página. Se precisar s
 	public interface Logica {
 		String executa(HttpServletRequest request,HttpServletResponse response) throws Exception;
 	}
+	
+> **Switch e a ideia do polimorfismo**
+No java o comportamento switch ou parecidos (if e elses encadeados) podem sempre ser transformados pelo polimorfismo.
 
 ### O Principal elemento: O Controller
 
